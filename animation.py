@@ -26,7 +26,7 @@ class AnimatedFormula(Scene):
            )
         self.wait(2)
 
-        text2 = Tex("First of all, let's take a look at that 1 in the denominator. We know that for any given \(x \in \mathbb{R}\) we have the following formula :").scale(0.8)
+        text2 = Tex("First of all, let's take a look at that tiny 1 in the denominator. We know that for any given \(x \in \mathbb{R}\) we have the following formula :").scale(0.8)
         text3 = Tex(r"\[\cos^2(x) + \sin^2(x) = 1\]")
         VGroup(text2, text3).arrange(DOWN)
         self.play(
@@ -42,7 +42,7 @@ class AnimatedFormula(Scene):
         )
         self.wait(1)
 
-        text5 = Tex("Okay then let's head to Taylor and see what he got for us. His formula goes as the following/ For any real or complex-valued function \(f\) that is infinitely differentiable at any real or complex \(a\), we have the following series :").scale(0.7)
+        text5 = Tex("Okay then let's head to Taylor and see what he got for us. His formula goes as the following: For any real or complex-valued function \(f\) that is infinitely differentiable at any real or complex \(a\), we have the following series :").scale(0.7)
         text6 = Tex(r"\[\sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} (x-a)^n = f(x)\]")
         text7 = Tex(r"Where \(f^{(n)}(a)\) represents the \(n\)-th derivative of \(f\) evaluated at \(a\).").scale(0.8)
 
@@ -90,7 +90,7 @@ class AnimatedFormula(Scene):
         )
         self.wait()
 
-        text02 = Tex("The famous Ramanujan Srinivasa who came up with the one of the most counterintuitive results one can ever think of which is:").scale(0.8)
+        text02 = Tex("The famous Ramanujan Srinivasa who came up with the one of the most counterintuitive results that tackles our very understanding of the nature of causality:").scale(0.8)
         text13 = Tex(r"\[\sum_{n=1}^{\infty} n = -\frac{1}{12}\]")
         VGroup(text02, text13).arrange(DOWN)
         self.play(
@@ -109,7 +109,7 @@ class AnimatedFormula(Scene):
         )
         self.wait(4)
 
-        text16 = Tex("Regarding his discovery of this formula, Ramanujan didn't leave behind any detailed record of his thought process or derivations.").scale(0.8)
+        text16 = Tex("Regarding his discovery of this formula, Ramanujan didn't leave behind any detailed record of his thought process or derivations (as he always did).").scale(0.8)
         self.play(
             Transform(formula_intro, text16),
             LaggedStart(*[FadeOut(obj, shift=DOWN) for obj in text15])
